@@ -187,9 +187,9 @@ export const heroes = [
         'characters':'Cisco Ramón'
     },
     {
-        'id': 'dc-deadp',
+        'id': 'marvel-deadpool',
         'superhero':'DeadPool', 
-        'publisher':'DC Comics', 
+        'publisher':'Marvel Comics', 
         'alter_ego':'Wade Winston',
         'first_appearance':'New Mutants (vol. 1) #98 (1991)',
         'characters':'Wade Winston'
@@ -223,8 +223,72 @@ export const heroes = [
         'superhero':'Thanos', 
         'publisher':'Marvel Comics', 
         'alter_ego':'Thanos The Titan',
-        'first_appearance':'The Invincible Iron Man # 55 (febrero de 1973)',
+        'first_appearance':'Iron Man Vol. 1, #55 (febrero de 1973)',
         'characters':'Thanos'
+    },
+    {
+        'id': 'dc-kidflash',
+        'superhero':'Kid flash', 
+        'publisher':'Dc Comics', 
+        'alter_ego':'Wally West, Bart Allen',
+        'first_appearance':'The Flash Vol.1 #110 (enero de 1960)',
+        'characters':'Wally West, Bart Allen'
+    },
+    {
+        'id': 'marvel-quicksilver',
+        'superhero':'Quicksilver', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Pietro Maximoff',
+        'first_appearance':' X-Men Nº 4 (marzo de 1964)',
+        'characters':'Pietro Maximoff'
+    },
+    {
+        'id': 'marvel-x23',
+        'superhero':'X23', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Laura Kinney',
+        'first_appearance':'NYX #3 de 2004',
+        'characters':'Laura Kinney'
+    },
+    {
+        'id': 'marvel-phoenix',
+        'superhero':'Phoenix', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Jean Elaine Grey Summers',
+        'first_appearance':'Uncanny X-Men #1 (1963)',
+        'characters':'Phoenix'
+    },
+    {
+        'id': 'marvel-ronin',
+        'superhero':'Ronin', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Echo, Red Guard, HawkEye',
+        'first_appearance':'Los Nuevos Vengadores #11noviembre de 2005',
+        'characters':'Echo, Red Guard, HawkEye'
+    },
+    {
+        'id': 'marvel-magneto',
+        'superhero':'Magneto', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Max Eisenhardt, Erik Lehnsherr',
+        'first_appearance':'Uncanny X-Men vol. 1 # 1 (septiembre de 1963)',
+        'characters':'Max Eisenhardt, Erik Lehnsherr'
+    },
+    {
+        'id': 'marvel-ScarletWitch',
+        'superhero':'Scarlet Witch', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Wanda Maximoff',
+        'first_appearance':' X-Men #4 (1964)',
+        'characters':'Wanda Maximoff'
+    },
+    {
+        'id': 'marvel-miles',
+        'superhero':'SpiderMan', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Miles Morales',
+        'first_appearance':'Ultimate Fallout #1, (2011)',
+        'characters':'Miles Morales'
     },
    
 ]

@@ -9,5 +9,5 @@ export const getHeroByPublisher = ( publisher ) => {
         throw new Error(`Publisher "${ publisher }" is incorrect.`);
     }
 
-    return heroes.filter( heroes => heroes.publisher === publisher );
+    return heroes.filter( hero => hero.publisher === publisher );
 }
