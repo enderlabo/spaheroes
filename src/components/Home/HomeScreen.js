@@ -4,7 +4,7 @@ import './home.css'
 
 export const HomeScreen = () => {
     return (
-        <div className="home">
+        <div >
             
         </div>
     )

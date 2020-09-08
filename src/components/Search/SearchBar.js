@@ -52,7 +52,7 @@ export const SearchBar = ({ history }) => {
                         />
 
                         <button  type="submit" 
-                        className="btn m-1 btn-block btn-outline-info">
+                        className="btn m-1 btn-block btn-info">
                             Search
                         </button>
                     </form>
@@ -60,7 +60,7 @@ export const SearchBar = ({ history }) => {
 
                 <div className="col-7">
 
-                    <h4> Results </h4>
+                    <h2 > Results </h2>
                     <hr />
                     {
                         ( query === '' ) && 

@@ -8,6 +8,30 @@ const heroes = [
         'characters':'Bruce Wayne'
     },
     {
+        'id': 'dc-joker',
+        'superhero':'Joker', 
+        'publisher':'DC Comics', 
+        'alter_ego':'Arthur Fleck',
+        'first_appearance':'comic book Batman, en april 1940',
+        'characters':'Arthur Fleck'
+    },
+    {
+        'id': 'dc-a',
+        'superhero':'Kid Flash', 
+        'publisher':'DC Comics', 
+        'alter_ego':'Wally West',
+        'first_appearance':'The Flash Vol.1 #110 (enero de 1960)',
+        'characters':'Wally West'
+    },
+    {
+        'id': 'dc-impu',
+        'superhero':'Impulse', 
+        'publisher':'DC Comics', 
+        'alter_ego':'Bart Allen',
+        'first_appearance':' Legion of Super-Heroes (vol. 4) 13 (October 1990)',
+        'characters':'Bart Allen'
+    },
+    {
         'id': 'dc-superman',
         'superhero':'Superman', 
         'publisher':'DC Comics', 
@@ -56,7 +80,7 @@ const heroes = [
         'characters':'Martian Manhunter'
     },
     {
-        'id': 'dc-robin',
+        'id': 'dc-night',
         'superhero':'Robin/Nightwing', 
         'publisher':'DC Comics', 
         'alter_ego':'Dick Grayson',
@@ -78,6 +102,30 @@ const heroes = [
         'alter_ego':'Dinah Drake',
         'first_appearance':'Flash Comics #86',
         'characters':'Dinah Drake, Dinah Lance'
+    },
+    {
+        'id': 'dc-reverse',
+        'superhero':'Reverse Flash', 
+        'publisher':'DC Comics', 
+        'alter_ego':'Professor Zoom',
+        'first_appearance':' The Flash (vol. 1) nº139 (septiembre de 1963)',
+        'characters':'Eoward Thawne'
+    },
+    {
+        'id': 'dc-blackf',
+        'superhero':'Black Flash', 
+        'publisher':'DC Comics', 
+        'alter_ego':'Death',
+        'first_appearance':'The Flash (vol. 2) #138 (June 1998)',
+        'characters':' '
+    },
+    {
+        'id': 'dc-vibe',
+        'superhero':'Vibe', 
+        'publisher':'DC Comics', 
+        'alter_ego':'Cisco Ramón',
+        'first_appearance':'Liga de la Justicia de América Anual #2 (octubre de 1984)',
+        'characters':'Cisco Ramón'
     },
     {
         'id': 'marvel-spider',
@@ -159,33 +207,6 @@ const heroes = [
         'first_appearance':'The Fantastic Four #48',
         'characters':'Norrin Radd'
     },
-
-
-
-    {
-        'id': 'dc-reverse',
-        'superhero':'Reverse Flash', 
-        'publisher':'DC Comics', 
-        'alter_ego':'Professor Zoom',
-        'first_appearance':' The Flash (vol. 1) nº139 (septiembre de 1963)',
-        'characters':'Eoward Thawne'
-    },
-    {
-        'id': 'dc-blackf',
-        'superhero':'Black Flash', 
-        'publisher':'DC Comics', 
-        'alter_ego':'Death',
-        'first_appearance':'The Flash (vol. 2) #138 (June 1998)',
-        'characters':' '
-    },
-    {
-        'id': 'dc-vibe',
-        'superhero':'Vibe', 
-        'publisher':'DC Comics', 
-        'alter_ego':'Cisco Ramón',
-        'first_appearance':'Liga de la Justicia de América Anual #2 (octubre de 1984)',
-        'characters':'Cisco Ramón'
-    },
     {
         'id': 'marvel-deadpool',
         'superhero':'DeadPool', 
@@ -194,14 +215,7 @@ const heroes = [
         'first_appearance':'New Mutants (vol. 1) #98 (1991)',
         'characters':'Wade Winston'
     },
-    {
-        'id': 'dc-joker',
-        'superhero':'Joker', 
-        'publisher':'DC Comics', 
-        'alter_ego':'Arthur Fleck',
-        'first_appearance':'comic book Batman, en april 1940',
-        'characters':'Arthur Fleck'
-    },
+  
     {
         'id': 'marvel-venom',
         'superhero':'Venom', 
@@ -225,14 +239,6 @@ const heroes = [
         'alter_ego':'Thanos The Titan',
         'first_appearance':'Iron Man Vol. 1, #55 (febrero de 1973)',
         'characters':'Thanos'
-    },
-    {
-        'id': 'dc-kidflash',
-        'superhero':'Kid flash', 
-        'publisher':'Dc Comics', 
-        'alter_ego':'Wally West, Bart Allen',
-        'first_appearance':'The Flash Vol.1 #110 (enero de 1960)',
-        'characters':'Wally West, Bart Allen'
     },
     {
         'id': 'marvel-quicksilver',
@@ -284,12 +290,21 @@ const heroes = [
     },
     {
         'id': 'marvel-miles',
-        'superhero':'SpiderMan', 
+        'superhero':'Miles Morales', 
         'publisher':'Marvel Comics', 
         'alter_ego':'Miles Morales',
         'first_appearance':'Ultimate Fallout #1, (2011)',
         'characters':'Miles Morales'
     },
+    {
+        'id': 'marvel-gambit',
+        'superhero':'Gambit', 
+        'publisher':'Marvel Comics', 
+        'alter_ego':'Remy Etienne LeBeau',
+        'first_appearance':'Uncanny X-Men #266 (agosto de 1990); Marvel Comics',
+        'characters':'Remy Etienne LeBeau'
+    },
+    
    
 ]
 
@@ -305,5 +320,7 @@ heroes.sort( ( a, b ) => {
 
     return 0
 });
+
+console.log(heroes)
 
  export default heroes;

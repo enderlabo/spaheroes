@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar } from '../components/ui/Navbar'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch, Route, Redirect, useHistory } from 'react-router-dom'
 import { MarvelScreen } from '../components/Marvel/MarvelScreen'
 import { HeroesScreen } from '../components/heroes/HeroesScreen'
 import { DcScreen } from '../components/DC/DcScreen'
@@ -8,7 +8,15 @@ import { SearchBar } from '../components/Search/SearchBar'
 import { HomeScreen } from '../components/Home/HomeScreen'
 // import { LoginScreen } from '../components/Login/LoginScreen'
 
+
 export const DashboardBoard = () => {
+    
+   const { location } = useHistory();
+
+    localStorage.setItem('lastPath', location.pathname);
+
+  
+
     return (
         <>
             <Navbar />

@@ -28,7 +28,7 @@ export const Navbar = () => {
                 className="navbar-brand" 
                 to="/"
             >
-                Asociaciones
+                Marvell vs Dc
             </Link>
 
             <div className="navbar-collapse">
