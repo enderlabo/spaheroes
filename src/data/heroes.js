@@ -1,4 +1,4 @@
-export const heroes = [
+const heroes = [
     {
         'id': 'dc-batman',
         'superhero':'Batman', 
@@ -292,3 +292,18 @@ export const heroes = [
     },
    
 ]
+
+//Order by superhero name
+heroes.sort( ( a, b ) => {
+
+    const nameA = a.superhero.toLocaleLowerCase(), 
+    nameB = b.superhero.toLocaleLowerCase();
+
+    if ( nameA > nameB ) return 1;
+
+    if( nameA < nameB ) return -1;
+
+    return 0
+});
+
+ export default heroes;

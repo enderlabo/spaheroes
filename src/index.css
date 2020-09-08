@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    height: 1000px;
+    background-image: url("https://i1.wp.com/infocletico.com.br/wp-content/uploads/2014/01/Banner-Marvel-VS-DC.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+footer {
+    background: black;
+}

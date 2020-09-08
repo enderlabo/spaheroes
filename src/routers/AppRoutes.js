@@ -1,24 +1,45 @@
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import { Navbar } from '../components/ui/Navbar'
-
+import React, { useContext } from 'react'
+import { BrowserRouter as Router, Switch, Route, Redirect, useHistory } from "react-router-dom";
 
 import { LoginScreen } from '../components/Login/LoginScreen';
-// import { MarvelScreen } from '../components/Marvel/MarvelScreen';
 import { DashboardBoard } from './DashboardBoard';
+// import { PrivateRoutes } from './PrivateRoutes';
+import { AuthContext } from '../auth/AuthContext';
+import { HomeScreen } from '../components/Home/HomeScreen';
+import { Footer } from '../components/ui/Footer';
+// import history from '../selectors/createHistory';
 
 
 export const AppRoutes = () => {
+
+    const { user} = useContext(AuthContext);
+    const history = useHistory();
+    console.log(history)
+
+    //  localStorage.setItem('pathName', location?.pathname);
+    
+
     return (
         <div>
             <Router>
                 <div>
                     <Switch>
-                        <Route exact path="/login" component={ LoginScreen } /> 
-                        
-                        <Route  path="/" component={ DashboardBoard } />
+                        { user.logged ? 
+                        ( <Route path="/" component= { DashboardBoard } /> )
+                        : ( <> 
+                            <Route exact path="/login" component= { LoginScreen } />
+                            <Redirect to="/login" />
+                        </> )}
+                        {/* <Route exact path="/login" component={ LoginScreen } />  */}
+{/*                         
+                        <PrivateRoutes 
+                        path="/" 
+                
+                        component={ DashboardBoard }
+                         /> */}
                     </Switch>
                 </div>
+            <Footer />
             </Router>
         </div>
     )
