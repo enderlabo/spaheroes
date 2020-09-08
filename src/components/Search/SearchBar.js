@@ -52,7 +52,7 @@ export const SearchBar = ({ history }) => {
                         />
 
                         <button  type="submit" 
-                        className="btn m-1 btn-block btn-info">
+                        className="btn m-1 btn-block btn-danger">
                             Search
                         </button>
                     </form>

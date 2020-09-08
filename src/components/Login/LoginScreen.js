@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { AuthContext } from '../../auth/AuthContext'
 import { types } from '../../types/type';
 
+import './login.css';
 
 export const LoginScreen = ({ history }) => {
 
@@ -26,13 +27,15 @@ export const LoginScreen = ({ history }) => {
 
     return (
 
-        <div className="container mt-5">
-            <h1>Login Screen</h1>
+        <div className=" mt-5">
+            <div className="containerl">
+                <h1>Login Screen</h1>
 
-            <button 
-              className="btn btn-primary"
-              onClick={ handleLogin }  
-            >Login</button>
+                <button 
+                className="btn btn-danger"
+                onClick={ handleLogin }  
+                >Login</button>
+            </div>
         </div>
     )
 }
