@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import { Route, Redirect } from 'react-router-dom'
+import { Route, Redirect, Switch } from 'react-router-dom'
 
 export const PrivateRoutes = ({
     isAuthenticate, 
@@ -11,15 +11,21 @@ export const PrivateRoutes = ({
 
 
     return (
-        <Route { ...rest }>
-            Component={ ( props ) => (
+        <div className="auth__main">
+            <div className="auth__box-container">
+                <Switch>
+                    <Route { ...rest }>
+                        Component={ ( props ) => (
 
-                ( isAuthenticate )
-                ? <Component { ...props } />
-                : <Redirect to="/login" />
-            )}
+                            ( isAuthenticate )
+                            ? <Component { ...props } />
+                            : <Redirect to="/login" />
+                        )}
 
-        </Route>
+                    </Route>
+                </Switch>
+            </div>
+        </div>
     )
 }
 

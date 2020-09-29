@@ -30,7 +30,7 @@ export const DashboardBoard = () => {
                     {/* <Route exact path="/home" component={ HomeScreen } /> */}
                     {/* <Route exact path="/login" component={ LoginScreen } /> */}
 
-                    <Redirect to="/" />
+                    <Redirect to="/marvel" />
 
                 </Switch>    
             </div>  

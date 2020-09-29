@@ -22,7 +22,7 @@ export const AppRoutes = ({...rest}) => {
                         { user.logged ? 
                         ( <Route path="/" component= { DashboardBoard } /> )
                         : ( <> 
-                            <Route exact path="/login" component= { LoginScreen } />
+                                <Route exact path="/login" component= { LoginScreen } />
                             <Redirect to="/login" />
                         </> )}
                     </Switch>

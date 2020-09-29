@@ -1,12 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 
 export const HeroesCards = (heroes) => {
 
+    const { location }  = useHistory();
 
+    console.log( location.pathname );
 
-    return (
+   
+
+      return (
     
         // <div className="card ms-3" style={{ maxWidth: 520 }}>
         //     <div className="row">
@@ -34,8 +38,9 @@ export const HeroesCards = (heroes) => {
 
         //     </div>
         // </div>
-
+        
         <div className="row row-cols-2 row-cols-md-2.5"  >
+            <div >
                 <div className="col mb-2">
                     <div className="card">
                         <img src={ `./assets/heroes/${ heroes.id }.jpg` }
@@ -61,6 +66,7 @@ export const HeroesCards = (heroes) => {
                 </div>
             </div>
         </div>
+    </div>
   
     
     )

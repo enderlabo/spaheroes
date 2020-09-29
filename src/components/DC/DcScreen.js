@@ -5,7 +5,7 @@ import { HeroesList } from '../heroes/HeroesList'
 export const DcScreen = () => {
 
     return (
-        <div>
+        <div className="dc__container">
             <h1 className="text-center white">DC Heroes</h1>
             <hr />
             <HeroesList publisher={ "DC Comics" } />

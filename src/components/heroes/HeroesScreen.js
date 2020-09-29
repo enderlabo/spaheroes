@@ -11,6 +11,8 @@ export const HeroesScreen = () => {
     const hero = useMemo(() => getHeroById( heroId ), [ heroId ]);
     const { replace } = useHistory();
 
+    const conditionalStyle = { background: '#ff0000' }
+
 
         if ( !hero )
         { 
